@@ -3,53 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Buku</title>
-    <style>
-        /* (Opsional) Sedikit gaya agar tabel terlihat lebih rapi */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: sans-serif;
-        }
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-        thead {
-            background-color: #f2f2f2; 
-        }
-    </style>
+    <title>Profil Saya</title>
 </head>
-<body>
+<body style="font-family: sans-serif;">
 
-    <h2>Daftar Harga Buku</h2>
+    <table width="900px" style="margin: auto; border-collapse: collapse;">
 
-    <table>
-        <thead>
-            <tr>
-                <th>Judul Buku</th>
-                <th>Nomor Buku</th>
-                <th>Harga Buku</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Belajar HTML Dasar</td>
-                <td>BK001</td>
-                <td>Rp 75.000</td>
-            </tr>
-            <tr>
-                <td>Panduan CSS Modern</td>
-                <td>BK002</td>
-                <td>Rp 85.000</td>
-            </tr>
-            <tr>
-                <td>Mahir JavaScript</td>
-                <td>BK003</td>
-                <td>Rp 95.000</td>
-            </tr>
-            </tbody>
+        <tr style="background-color: #f0f0f0;">
+            <td style="padding: 10px;">
+                <table width="100%">
+                    <tr>
+                        <td><b>Brand</b></td>
+                        <td align="right">
+                            <a href="#biodata" style="margin-left: 15px;">Biodata</a>
+                            <a href="#portofolio" style="margin-left: 15px;">Portofolio</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding: 40px 20px;">
+                <table width="100%">
+                    <tr>
+                        <td valign="top" width="40%">
+                            <h1>Selamat Datang di Website Saya</h1>
+                            <p>Ini adalah contoh biodata yang dibuat dengan HTML Table untuk memenuhi tugas yang diberikan. Teruslah berlatih karena ini adalah langkah awal yang bagus!</p>
+                            <a href="#biodata">
+                                <button style="padding: 10px 15px; border: none; background-color: #007BFF; color: white; cursor: pointer;">
+                                    Lihat Biodata Saya
+                                </button>
+                            </a>
+                        </td>
+                        <td width="60%" align="right">
+                            <img src="https://via.placeholder.com/600x400" alt="Gambar Placeholder">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr id="biodata" style="background-color: #f9f9f9;">
+            <td style="padding: 40px 20px;">
+                <h2 align="center">About Me</h2>
+                <p align="center" style="color: #666;">Detail singkat tentang diri saya.</p>
+                <br>
+                <table width="100%" style="text-align: center;">
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 20px;"><b>Nama Lengkap</b><br>Syaikhasril Maulana</td>
+                        <td style="border: 1px solid #ddd; padding: 20px;"><b>Pendidikan</b><br>S1 Computer Science</td>
+                        <td style="border: 1px solid #ddd; padding: 20px;"><b>Pekerjaan</b><br>Web Developer</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 20px;"><b>Kontak</b><br>syaikhasril@gmail.com</td>
+                        <td style="border: 1px solid #ddd; padding: 20px;"><b>Hobi</b><br>Membaca Buku Koding</td>
+                        <td style="border: 1px solid #ddd; padding: 20px;"><b>Alamat</b><br>Kota Salatiga</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr id="portofolio">
+            <td style="padding: 40px 20px;">
+                <h2 align="center">Portofolio</h2>
+                <br>
+                <table width="100%" style="text-align: center;">
+                    <tr>
+                        <td width="33%" style="padding: 10px;">
+                            <img src="https://via.placeholder.com/350x200" alt="Proyek 1" width="100%">
+                            <h4>Proyek 1</h4>
+                            <p style="color: #666;">Deskripsi singkat mengenai proyek pertama.</p>
+                        </td>
+                        <td width="33%" style="padding: 10px;">
+                            <img src="https://via.placeholder.com/350x200" alt="Proyek 2" width="100%">
+                            <h4>Proyek 2</h4>
+                            <p style="color: #666;">Deskripsi singkat mengenai proyek kedua.</p>
+                        </td>
+                        <td width="33%" style="padding: 10px;">
+                            <img src="https://via.placeholder.com/350x200" alt="Proyek 3" width="100%">
+                            <h4>Proyek 3</h4>
+                            <p style="color: #666;">Deskripsi singkat mengenai proyek ketiga.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr style="background-color: #333; color: white;">
+            <td style="padding: 20px; text-align: center;">
+                <p>Copyright &copy; 2025 - Dibuat dengan semangat!</p>
+            </td>
+        </tr>
+
     </table>
 
 </body>
