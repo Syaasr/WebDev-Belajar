@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Saya</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body style="font-family: sans-serif;">
 
     <table width="900px" style="margin: auto; border-collapse: collapse;">
 
-        <tr style="background-color: #f0f0f0;">
-            <td style="padding: 10px;">
+        <tr id="navbar">
+            <td>
                 <table width="100%">
                     <tr>
-                        <td><b>Brand</b></td>
-                        <td align="right">
-                            <a href="#biodata" style="margin-left: 15px;">Biodata</a>
-                            <a href="#portofolio" style="margin-left: 15px;">Portofolio</a>
+                        <td width="30%"><a href="#" class="brand">Brand</a></td>
+                        <td width="70%" style="text-align: right;">
+                            <a href="#header" class="nav-link">Header</a>
+                            <a href="#biodata" class="nav-link">Biodata</a>
+                            <a href="#portofolio" class="nav-link">Portofolio</a>
                         </td>
                     </tr>
                 </table>
@@ -24,75 +26,88 @@
         </tr>
 
         <tr>
-            <td style="padding: 40px 20px;">
+            <td style="padding: 40px 20px; text-align: center;">
                 <table width="100%">
                     <tr>
-                        <td valign="top" width="40%">
+                        <td valign="top" width="50%">
                             <h1>Selamat Datang di Website Saya</h1>
-                            <p>Ini adalah contoh biodata yang dibuat dengan HTML Table untuk memenuhi tugas yang diberikan. Teruslah berlatih karena ini adalah langkah awal yang bagus!</p>
+                            <p>Ini adalah biodata yang dibuat dengan HTML dan CSS</p>
                             <a href="#biodata">
                                 <button style="padding: 10px 15px; border: none; background-color: #007BFF; color: white; cursor: pointer;">
                                     Lihat Biodata Saya
                                 </button>
                             </a>
                         </td>
-                        <td width="60%" align="right">
-                            <img src="https://via.placeholder.com/600x400" alt="Gambar Placeholder">
+                        <td width="50%" align="right">
+                            <img src="Sigma.jpg" alt="Gambar Pria Sigma" class="hero-image">
                         </td>
                     </tr>
                 </table>
             </td>
         </tr>
 
-        <tr id="biodata" style="background-color: #f9f9f9;">
-            <td style="padding: 40px 20px;">
-                <h2 align="center">About Me</h2>
+        <tr id="biodata">
+            <td style="padding: 40px 20px; background-color: #f9f9f9;">
+                <h2 align="center" style="color: #333;">About Me</h2>
                 <p align="center" style="color: #666;">Detail singkat tentang diri saya.</p>
                 <br>
-                <table width="100%" style="text-align: center;">
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 20px;"><b>Nama Lengkap</b><br>Syaikhasril Maulana</td>
-                        <td style="border: 1px solid #ddd; padding: 20px;"><b>Pendidikan</b><br>S1 Computer Science</td>
-                        <td style="border: 1px solid #ddd; padding: 20px;"><b>Pekerjaan</b><br>Web Developer</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid #ddd; padding: 20px;"><b>Kontak</b><br>syaikhasril@gmail.com</td>
-                        <td style="border: 1px solid #ddd; padding: 20px;"><b>Hobi</b><br>Membaca Buku Koding</td>
-                        <td style="border: 1px solid #ddd; padding: 20px;"><b>Alamat</b><br>Kota Salatiga</td>
-                    </tr>
-                </table>
+                
+                <div class="biodata-grid">
+                    <div class="biodata-item">
+                        <span class="bio-label">Full Name:</span>
+                        <span class="bio-value">Syaikhasril Maulana</span>
+                    </div>
+                    <div class="biodata-item">
+                        <span class="bio-label">Education:</span>
+                        <span class="bio-value">S1 Computer Science</span>
+                    </div>
+                    <div class="biodata-item">
+                        <span class="bio-label">Pekerjaan:</span>
+                        <span class="bio-value">Trader</span>
+                    </div>
+                    <div class="biodata-item">
+                        <span class="bio-label">Contact:</span>
+                        <span class="bio-value">syaikhasril@gmail.com</span>
+                    </div>
+                    <div class="biodata-item">
+                        <span class="bio-label">Hobi:</span>
+                        <span class="bio-value">Coding</span>
+                    </div>
+                    <div class="biodata-item">
+                        <span class="bio-label">Alamat:</span>
+                        <span class="bio-value">Solo</span>
+                    </div>
+                </div>
             </td>
         </tr>
 
-        <tr id="portofolio">
-            <td style="padding: 40px 20px;">
-                <h2 align="center">Portofolio</h2>
-                <br>
-                <table width="100%" style="text-align: center;">
-                    <tr>
-                        <td width="33%" style="padding: 10px;">
-                            <img src="https://via.placeholder.com/350x200" alt="Proyek 1" width="100%">
-                            <h4>Proyek 1</h4>
-                            <p style="color: #666;">Deskripsi singkat mengenai proyek pertama.</p>
-                        </td>
-                        <td width="33%" style="padding: 10px;">
-                            <img src="https://via.placeholder.com/350x200" alt="Proyek 2" width="100%">
-                            <h4>Proyek 2</h4>
-                            <p style="color: #666;">Deskripsi singkat mengenai proyek kedua.</p>
-                        </td>
-                        <td width="33%" style="padding: 10px;">
-                            <img src="https://via.placeholder.com/350x200" alt="Proyek 3" width="100%">
-                            <h4>Proyek 3</h4>
-                            <p style="color: #666;">Deskripsi singkat mengenai proyek ketiga.</p>
-                        </td>
-                    </tr>
-                </table>
+        <tr>
+            <td>
+                <div id="portofolio" class="portfolio-section">
+                    <h2 class="portfolio-title">Portofolio</h2>
+                    
+                    <div class="portfolio-grid">
+
+                        <div class="portfolio-item">
+                            <img src="https://trustwallet.com/_next/image?url=https%3A%2F%2Fstrapi-cdn.trustwallet.com%2Fmega_eth_guide_68a37dbecf.png&w=1920&q=75" alt="Proyek 1">
+                            <h4>Mega ETH</h4>
+                            <p>Deskripsi singkat mengenai proyek pertama.</p>
+                        </div>
+
+                        <div class="portfolio-item">
+                            <img src="https://assets.bitdegree.org/images/monad-airdrop-guide-apriori.jpg" alt="Proyek 3">
+                            <h4>Monad Airdrop</h4>
+                            <p>Deskripsi singkat mengenai proyek ketiga.</p>
+                        </div>
+
+                    </div>
+                </div>
             </td>
         </tr>
 
         <tr style="background-color: #333; color: white;">
             <td style="padding: 20px; text-align: center;">
-                <p>Copyright &copy; 2025 - Dibuat dengan semangat!</p>
+                <p>Copyright &copy; 2025 - Dibuat dengan VS Code!</p>
             </td>
         </tr>
 

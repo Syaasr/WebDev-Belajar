@@ -1,0 +1,148 @@
+/* style.css (Versi Perbaikan) */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* ==================================
+    STYLING UNTUK NAVBAR (BAGIAN UTAMA)
+   ================================== */
+
+/* Targetkan <td> yang ada di dalam <tr> dengan id="navbar".
+  Ini akan menjadi kontainer biru untuk seluruh navigasi.
+*/
+#navbar > td {
+    background-color: #007bff; /* Warna biru cerah */
+    padding: 15px 25px;       /* Memberi jarak di dalam bar biru */
+}
+
+/* Atur warna dan hapus garis bawah untuk teks "Brand".
+*/
+.brand {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em; /* Sedikit lebih besar */
+    font-weight: bold;
+}
+
+/* Atur warna dan hapus garis bawah untuk link navigasi di kanan.
+*/
+.nav-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Tambahkan ini di file style.css */
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 8px;
+    display: block; /* Mencegah adanya spasi kosong di bawah gambar */
+}
+
+/* ==================================
+    STYLING LAIN (SUDAH BENAR)
+   ================================== */
+#biodata {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* TAMBAHKAN INI DI file style.css */
+
+.biodata-grid {
+    display: flex;          /* Mengaktifkan layout flexbox */
+    flex-wrap: wrap;        /* Izinkan item pindah ke baris baru */
+    justify-content: center;/* Pusatkan semua item di tengah */
+    gap: 16px;              /* Jarak antar kotak biodata */
+    margin-top: 20px;
+}
+
+.biodata-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    flex-basis: 320px; /* << MENJADI LEBIH LEBAR */
+    text-align: center;
+}
+
+.bio-label {
+    color: #007BFF;           /* Warna teks label menjadi biru */
+    font-weight: bold;         /* Teks label menjadi tebal */
+    margin-right: 8px;         /* Jarak antara label dan value */
+}
+
+.bio-value {
+    color: #333333;           /* Warna teks value menjadi hitam */
+}
+
+.cta-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.portfolio-title {
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: flex;         /* Menggunakan Flexbox untuk tata letak */
+    justify-content: center; /* Posisi item di tengah */
+    gap: 20px;             /* Jarak antar item portofolio */
+    flex-wrap: wrap;       /* Izinkan item turun ke baris baru jika layar kecil */
+}
+
+.portfolio-item {
+    border: 2px solid black;  /* <<< Ini untuk border hitam yang Anda minta */
+    border-radius: 8px;       /* Sudut sedikit melengkung */
+    padding: 15px;            /* Jarak di dalam kotak */
+    flex-basis: 300px;        /* Lebar dasar setiap item */
+    text-align: left;         /* Teks di dalam item rata kiri */
+    background-color: #fdfdfd;
+}
+
+/* KUNCI UNTUK MEMBUAT GAMBAR SAMA BESAR */
+.portfolio-item img {
+    width: 100%;              /* Lebar gambar mengisi penuh wadahnya */
+    height: 180px;            /* <<< Atur tinggi gambar menjadi sama semua */
+    object-fit: cover;        /* <<< Pastikan gambar mengisi ruang tanpa distorsi */
+    border-radius: 4px;       /* Sudut melengkung untuk gambar */
+    margin-bottom: 15px;      /* Jarak antara gambar dan judul */
+}
+
+.portfolio-item h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    color: #666;
+    font-size: 0.9em;
+    margin: 0;
+}
