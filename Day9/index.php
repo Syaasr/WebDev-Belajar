@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'koneksi.php';
 
 if (isset($_GET['kategori'])) {
@@ -66,7 +67,7 @@ $result = mysqli_query($koneksi, $query);
                                 
                                 <a href="hapus.php?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin mau dihapus?');">Hapus</a>
                                 
-                                <a href="#" class="btn btn-primary btn-sm">Beli</a>
+                                <a href="beli.php?id=<?php echo $row['id']; ?>" class="btn btn-primary w-100"> + Keranjang</a>
                             </div>
                         </div>
                     </div>
