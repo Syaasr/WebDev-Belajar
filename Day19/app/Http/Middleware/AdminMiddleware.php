@@ -15,6 +15,6 @@ class AdminMiddleware
             return $next($request); 
         }
 
-        return redirect('/')->with('error', 'Akses ditolak! Anda bukan Admin.');
+        return redirect('/')->with('error', 'Access denied! You are not an admin.');
     }
 }

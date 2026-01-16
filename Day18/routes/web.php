@@ -17,7 +17,7 @@ Route::delete('/cart/remove/{id}', [CartController::class, 'remove'])->name('car
 Route::get('/dashboard', function () {
     $totalProducts = \App\Models\Product::count();
     $totalCategories = \App\Models\Category::count();
-    $totalClicks = 12340; 
+    $totalClicks = (int) env('TOTAL_CLICKS', 12340); 
 
     return view('dashboard', compact('totalProducts', 'totalCategories', 'totalClicks'));
 })->middleware(['auth', 'verified'])->name('dashboard');
